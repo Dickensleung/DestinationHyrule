@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  }
+
+.modal-dialog {
+max-width: 900px;
+margin: 30px auto;
+}
+
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+
+.modal-body iframe{
+margin: 0 auto;
+display: block;
+}
+
+.modal.fade .modal-dialog {
+-webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+      -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+-webkit-transform: translate(0, 0);
+-ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+
+/* The Close Button */
+.close {
+position:absolute;
+left:30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+
+.close:hover,
+.close:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+
+.mySlides {
+display: none;
+}
+
+.cursor {
+cursor: pointer;
+}
+
+    
