@@ -201,7 +201,7 @@ input{
 /**** Mobile Navigation Style ****/
 .menu-btn{
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 0;
     width: 80px;
     height: 60px;
@@ -216,7 +216,7 @@ input{
         height: 4px;
         width: 30px;
         top: 30px;
-        right: 0;
+        border-top-right-radius: 0;
         background-color: #212121;
 
     }
@@ -461,6 +461,7 @@ article h1{
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
+    padding: 4em 1.7em;
 
 }
 
@@ -1099,19 +1100,10 @@ tfoot {
         font-size: 5.5vw;
     }
 
-    form{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        padding: 25px 50px;
-    }
+
 
     .newsletter .newsletter-submit-btn{
         max-width: 300px;
-    }
-
-    .newsletter{
-        height: 35vh;
     }
 
     
