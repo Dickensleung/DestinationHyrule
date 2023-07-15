@@ -1,28 +1,29 @@
 //================================== Menu Button =====================================//
-var btn = document.getElementById('nav-button');
-const out = document.getElementById('links');
-const btnstyle = document.getElementById('nav-button');
+var btn = $('.icon');
+var menu = $('.menu');
+const navMenu = $('.links');
 const body = document.body;
 
-btn.addEventListener('click', function(){
-  if(out.style.display === "block"){
-    out.style.display = "none";
-  }else{
-      out.style.display = "block";
-  }
-    
+menu.on('click', function(){
+  menu.toggleClass("open");
+  navMenu.toggleClass("nav-open");
+
+  //hack method for method on image.html for nav menu
+  var container = $('.container');
+  container.toggleClass('skills');
+
 });
 
 //click outside of menu dropdown box closes menu
-window.addEventListener('mouseup', function(event){
+/*$(window).on('mouseup', function(event){
   if (event.target != btn && event.target.parentNode != btn){
         out.style.display = 'none';
     }
-});
+});*/
 
 
-btn.addEventListener('mousedown', (e) => { 
-  e.preventDefault() 
+btn.on('mousedown', function(e){
+  e.preventDefault(); 
 });
 
 //================================== Scroll to Top =====================================//
@@ -49,7 +50,7 @@ $(function() {
   });
 
 
-//================================== Video Modal =====================================//
+  //================================== Video Modal =====================================//
 
     //videosrc
     var $videoSrc; 
@@ -67,7 +68,7 @@ $(function() {
       $("#video").attr('src',$videoSrc); 
     })
 
-//================================== Slick Slider Controls =====================================//
+  //================================== Slick Slider Controls =====================================//
 
   //================================= index Slider =================================// 
   $('.card-slider-container').slick({
@@ -151,11 +152,8 @@ $(function() {
     ]
   });
 
-  //================================== Lightbox Controls =====================================//
-
-});
-
-    
+ 
+})
 
 
 

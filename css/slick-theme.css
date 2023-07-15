@@ -21,15 +21,8 @@
 {
     font-size: 0;
     line-height: 0;
-    position: absolute;
-    top: 35%;
 
     display: block;
-
-    width: 20px;
-    height: 20px;
-    margin: 10px 20px;
-    padding: 5px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -40,9 +33,10 @@
     border: none;
     outline: none;
     background: transparent;
-    height: 50px;
-    width: 50px;
+    position: absolute;
+    bottom: 50%;
 }
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -81,7 +75,7 @@
 
 .slick-prev
 {
-    left: -40px;
+    left: 0;
     z-index: 1; 
 }
 [dir='rtl'] .slick-prev
@@ -100,7 +94,7 @@
 
 .slick-next
 {
-    right: -40px;
+    right: 0;
     z-index: 1;
 }
 [dir='rtl'] .slick-next
